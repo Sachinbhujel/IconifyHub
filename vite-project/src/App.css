@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
@@ -168,7 +169,7 @@ body::-webkit-scrollbar {
     position: relative;
     width: 100vw;
     height: 100dvh;
-   
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,13 +186,12 @@ body::-webkit-scrollbar {
 }
 
 .hero-content {
-  width: 100vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
 
 .hero-content h1 {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
@@ -239,75 +239,197 @@ body::-webkit-scrollbar {
     box-shadow: none;
 }
 
-
 /* WHYCHOOSEUS CSS */
 
 .why-choose-us {
-  background-color: #0e0e0e;
-  color: #f1f1f1;
-  padding: 60px 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0e0e0e;
+    color: #f1f1f1;
+    padding: 60px 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
 }
 
 .why-choose-us h2 {
-  font-size: 1.9rem;
-  margin-bottom: 10px;
-  color: #00ffd5;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    color: #00ffd5;
 }
 
 .subtitle {
-  font-size: 1rem;
-  color: #cccccc;
-  margin-bottom: 50px;
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 50px;
 }
 
 .reasons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
 }
 
 .reason {
-  background-color: #1a1a1a;
-  padding: 25px;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 0 transparent;
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 transparent;
 }
 
 .reason:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 255, 213, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 255, 213, 0.15);
 }
 
 .reason h3 {
-  font-size: 1.4rem;
-  color: white;
-  margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 15px;
 }
 
 .reason p {
-  font-size: 0.92rem;
-  color: #dddddd;
-  line-height: 1.6;
+    font-size: 0.92rem;
+    color: #dddddd;
+    line-height: 1.6;
 }
 
+/* TESTIMONIALS CSS */
 
-@media (max-width: 650px) {
-  .hero-content{
-    width: 80vw;
-  }
-    .hero-content h1 {
-        font-size: 1.6rem;
+.testimonials {
+    background-color: #0b0b0b;
+    color: #f1f1f1;
+    padding: 60px 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testimonial-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    color: #00ffd5;
+}
+
+.desc {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 0 transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    word-wrap: break-word;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 255, 213, 0.1);
+}
+
+.message {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-weight: 500;
+    color: #40e0d0;
+    font-size: 0.95rem;
+}
+
+/* FAQ CSS */
+
+.faq {
+    background-color: #0e0e0e;
+    color: #f1f1f1;
+    padding: 60px 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    color: #00ffd5;
+}
+
+.faq-list {
+    text-align: left;
+}
+
+.faq-item {
+    background-color: #1a1a1a;
+    margin-bottom: 16px;
+    padding: 20px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #272727;
+}
+
+.faq-question {
+    font-size: 1.15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+.toggle-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+    user-select: none;
+}
+
+.faq-answer {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
     }
-    .hero-content p {
-        font-size: 0.79rem;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -320,6 +442,18 @@ body::-webkit-scrollbar {
 @media (width<660px) {
     .nav-right {
         display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-content {
+        width: 80vw;
+    }
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+    .hero-content p {
+        font-size: 0.79rem;
     }
 }
 
@@ -344,8 +478,76 @@ body::-webkit-scrollbar {
     }
 }
 
+@media (max-width: 480px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .testimonials h2 {
+        font-size: 1.8rem;
+    }
+
+    .message {
+        font-size: 0.9rem;
+    }
+
+    .author {
+        font-size: 0.85rem;
+    }
+
+    .faq h2 {
+        font-size: 1.8rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        font-size: 0.9rem;
+    }
+    .why-choose-us h2 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .reason {
+    padding: 20px;
+  }
+
+  .reason h3 {
+    font-size: 1.2rem;
+  }
+
+  .reason p {
+    font-size: 0.9rem;
+  }
+}
+
 @media (width<300px) {
     .side-profile-div {
         flex-direction: column;
     }
 }
+
+@media (max-width: 350px) {
+    .testimonials h2 {
+        font-size: 1.7rem;
+    }
+
+    .message {
+        font-size: 0.9rem;
+    }
+
+    .author {
+        font-size: 0.85rem;
+    }
+}
+
+
+
