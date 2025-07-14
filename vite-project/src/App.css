@@ -249,7 +249,7 @@ body::-webkit-scrollbar {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     text-align: center;
 }
@@ -268,7 +268,7 @@ body::-webkit-scrollbar {
 
 .reasons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
@@ -276,8 +276,9 @@ body::-webkit-scrollbar {
     background-color: #1a1a1a;
     padding: 25px;
     border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 0 transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    word-wrap: break-word;
 }
 
 .reason:hover {
@@ -484,8 +485,17 @@ body::-webkit-scrollbar {
         gap: 15px;
     }
 
+    .reasons {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
     .testimonials h2 {
         font-size: 1.8rem;
+    }
+
+    .why-choose-us h2{
+         font-size: 1.8rem;
     }
 
     .message {
@@ -507,26 +517,23 @@ body::-webkit-scrollbar {
     .faq-answer {
         font-size: 0.9rem;
     }
-    .why-choose-us h2 {
-    font-size: 1.8rem;
-  }
 
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: 30px;
-  }
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
 
-  .reason {
-    padding: 20px;
-  }
+    .reason {
+        padding: 20px;
+    }
 
-  .reason h3 {
-    font-size: 1.2rem;
-  }
+    .reason h3 {
+        font-size: 1.2rem;
+    }
 
-  .reason p {
-    font-size: 0.9rem;
-  }
+    .reason p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (width<300px) {
@@ -547,7 +554,8 @@ body::-webkit-scrollbar {
     .author {
         font-size: 0.85rem;
     }
+
+    .why-choose-us h2{
+         font-size: 1.7rem;
+    }
 }
-
-
-
