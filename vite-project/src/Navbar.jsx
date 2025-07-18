@@ -5,7 +5,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const handleMenu = () => {
-        setMenuOpen(!menuOpen);
+        setMenuOpen(true);
     };
     return (
         <div>
@@ -41,18 +41,19 @@ const Navbar = () => {
             </header>
             {menuOpen ? (
                 <div className="sideNav-div">
-                        <nav className="side-nav">
-                            <a href="#icons">Icons</a>
-                            <a href="#pricing">Pricing</a>
-                            <a href="#illustrations">Illustrations</a>
-                        </nav>
+                    <span className="material-symbols-outlined close" onClick={() => setMenuOpen(false)}>close</span>
+                    <nav className="side-nav">
+                        <a href="#icons">Icons</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#illustrations">Illustrations</a>
+                    </nav>
                     <div className="side-nav-input">
+                        <button className="side-new-button">New</button>
                         <input
                             type="text"
                             placeholder="Search"
                             className="side-search-input"
                         />
-                        <button className="side-new-button">New</button>
                         <div className="side-profile-div">
                             <img src="https://images.pexels.com/photos/13010935/pexels-photo-13010935.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" />
                             <p>Sachin Bhujel</p>
