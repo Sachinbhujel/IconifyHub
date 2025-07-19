@@ -29,7 +29,7 @@ const iconData = [
     {name: "toggle_on", title: "toggle_on"},
 ];
 
-const Icons = () => {
+const Icons = ({searchQuery}) => {
 
   const [openIconName, setOpenIconName] = useState("");
   const [iconClick, setIconClick] = useState(false);
@@ -37,6 +37,11 @@ const Icons = () => {
     setIconClick(true);
     setOpenIconName(iconName);
   }
+
+  const filteredIcons = iconData.filter((icon) =>
+  icon.name.toLowerCase().includes(searchQuery.toLowerCase())
+);
+
   return (
     <>
     {iconClick ? (
@@ -50,7 +55,7 @@ const Icons = () => {
         </p>
 
         <div className="icon-grid">
-          {iconData.map((icon, index) => (
+          {filteredIcons.map((icon, index) => (
             <div className="icon-card" key={index} onClick={() => handleIconOpen(icon.name)}>
               <span className="material-symbols-outlined icon-symbol">{icon.name}</span>
             </div>

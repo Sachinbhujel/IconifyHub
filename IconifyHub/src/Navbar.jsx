@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const Navbar = () => {
+const Navbar = ({searchQuery, setSearchQuery}) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const handleMenu = () => {
@@ -29,7 +29,10 @@ const Navbar = () => {
                         type="text"
                         placeholder="Search"
                         className="search-input"
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
                     />
+
                     <button className="new-button nav-right">New</button>
                     <span
                         className="material-symbols-outlined menu"
@@ -41,7 +44,12 @@ const Navbar = () => {
             </header>
             {menuOpen ? (
                 <div className="sideNav-div">
-                    <span className="material-symbols-outlined close" onClick={() => setMenuOpen(false)}>close</span>
+                    <span
+                        className="material-symbols-outlined close"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        close
+                    </span>
                     <nav className="side-nav">
                         <a href="#icons">Icons</a>
                         <a href="#pricing">Pricing</a>
