@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #0e0e0e;
 }
 
@@ -138,7 +138,7 @@ body::-webkit-scrollbar {
     outline: none;
 }
 
-.side-nav-input button{
+.side-nav-input button {
     margin-top: -5px;
     margin-bottom: 30px;
 }
@@ -513,88 +513,84 @@ body::-webkit-scrollbar {
     color: #777;
 }
 
-
 /* ICONGRID CSS */
 
 .icons {
     width: 100vw;
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #0e0e0e;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #0e0e0e;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .icon-container {
-  max-width: 900px;
-  margin: 0 auto;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .icon-container h2 {
-  font-size: 1.9rem;
-  margin-bottom: 10px;
-  color: #00ffd5;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    color: #00ffd5;
 }
 
 .icon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  gap: 12px;
-  margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 12px;
+    margin-top: 30px;
 }
 
 .icon-card {
-  background: white;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.2s ease;
-  cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+    cursor: pointer;
 }
 
 .icon-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0, 115, 230, 0.3);
+    transform: translateY(-2px);
 }
 
 .icon-symbol {
-  font-size: 24px;
-  color: #0073e6;
+    font-size: 24px;
+    color: white;
 }
 
 .icon-title {
-  margin-top: 6px;
-  font-weight: 500;
-  font-size: 12px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
+    margin-top: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .highlight {
-  font-weight: bold;
+    font-weight: bold;
 }
-
 
 /* ICON OPEN */
 
 .open-icon-div {
-  padding: 24px;
-  background-color: #111;
-  color: #f1f1f1;
-  font-family: 'Segoe UI', sans-serif;
+    padding: 24px;
+    background-color: #111;
+    color: #f1f1f1;
+    font-family: "Segoe UI", sans-serif;
 }
 
 .back-button {
-  color: white;
-  cursor: pointer;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 24px;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
 }
 
 .click-icon-div {
@@ -603,64 +599,62 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     padding: 20px;
-  background-color: white;
-  width: max-content;
-  border-radius: 6px;
-  color: black;
-  margin-bottom: 50px;
+    background-color: white;
+    width: max-content;
+    border-radius: 6px;
+    color: black;
+    margin-bottom: 50px;
 }
 
-.click-icon-div span{
+.click-icon-div span {
     font-size: 28px;
 }
 
 .instruction-div h2 {
-  color: white;
-  font-weight: bold;
-  margin-top: 25px;
-  font-size: 22px;
-  margin-bottom: 14px;
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 22px;
+    margin-bottom: 14px;
 }
 
 .instruction-div p,
 .instruction-div a {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ddd;
-  text-decoration: none;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+    text-decoration: none;
 }
 
 .instruction-div a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .copy-code {
-  background-color: #222;
-  border-radius: 12px;
-  padding: 16px;
-  margin-top: 20px;
-  overflow-x: auto;
+    background-color: #222;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 20px;
 }
 
-.copy-link{
+.copy-link {
     overflow-x: scroll;
 }
 
 .copy-icon {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 20px;
-  color: #aaa;
-  cursor: pointer;
-  user-select: none;
-  font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    color: #aaa;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
 }
 
 .copy-icon span {
-  font-size: 20px;
+    font-size: 20px;
 }
-
 
 /* RESPONSIVE */
 
@@ -715,8 +709,8 @@ body::-webkit-scrollbar {
         display: block;
     }
 
-    .side-new-button{
-      width: 100px;
+    .side-new-button {
+        width: 100px;
     }
 }
 

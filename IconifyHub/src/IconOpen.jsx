@@ -48,7 +48,9 @@ function IconOpen({ openIconName, setIconClick }) {
                     <div
                         className="copy-icon"
                         onClick={() =>
-                            handleCopy(`<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=${openIconName}" />`)
+                            handleCopy(
+                                `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=${openIconName}" />`
+                            )
                         }
                     >
                         <span className="material-symbols-outlined">
@@ -60,7 +62,7 @@ function IconOpen({ openIconName, setIconClick }) {
 
                 <div className="copy-code">
                     <pre className="copy-link">
-{`<style>
+                        {`<style>
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -94,7 +96,7 @@ function IconOpen({ openIconName, setIconClick }) {
                 <h2>Inserting the icon</h2>
                 <div className="copy-code">
                     <pre className="copy-link">
-{`<span class="material-symbols-outlined">
+                        {`<span class="material-symbols-outlined">
 ${openIconName}
 </span>`}
                     </pre>
@@ -115,9 +117,7 @@ ${openIconName}
 
                 <h2>Icon name</h2>
                 <div className="copy-code">
-                    <pre className="copy-link">
-                        {openIconName}
-                    </pre>
+                    <pre className="copy-link">{openIconName}</pre>
                     <div
                         className="copy-icon"
                         onClick={() => handleCopy(openIconName)}
