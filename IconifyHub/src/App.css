@@ -111,7 +111,7 @@ body::-webkit-scrollbar {
 }
 
 .side-nav a {
-    padding: 5px;
+    padding: 4px;
     text-decoration: none;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -636,10 +636,11 @@ body::-webkit-scrollbar {
     border-radius: 12px;
     padding: 16px;
     margin-top: 20px;
+    overflow-x: hidden;
 }
 
-.copy-link {
-    overflow-x: scroll;
+.copy-link::-webkit-scrollbar {
+    display: none;
 }
 
 .copy-icon {
