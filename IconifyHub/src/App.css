@@ -255,7 +255,7 @@ body::-webkit-scrollbar {
 .why-choose-us {
     background-color: #0e0e0e;
     color: #f1f1f1;
-    padding: 40px 20px;
+    padding: 30px 20px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -513,6 +513,7 @@ body::-webkit-scrollbar {
 /* ICONGRID CSS */
 
 .icons {
+    width: 100vw;
   padding: 60px 20px;
   text-align: center;
   background-color: #0e0e0e;
@@ -575,9 +576,85 @@ body::-webkit-scrollbar {
 }
 
 
-.open-icon-div{
-    background: black;
-    color: white;
+/* ICON OPEN */
+
+.open-icon-div {
+  padding: 24px;
+  background-color: #111;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.back-button {
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.click-icon-div {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  background-color: white;
+  width: max-content;
+  border-radius: 6px;
+  color: black;
+  margin-bottom: 50px;
+}
+
+.click-icon-div span{
+    font-size: 28px;
+}
+
+.instruction-div h2 {
+  color: white;
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.instruction-div p,
+.instruction-div a {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.instruction-div a:hover {
+  text-decoration: underline;
+}
+
+.copy-code {
+  background-color: #222;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.copy-link{
+    overflow-x: scroll;
+}
+
+.copy-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  color: #aaa;
+  cursor: pointer;
+  user-select: none;
+  font-size: 14px;
+}
+
+.copy-icon span {
+  font-size: 20px;
 }
 
 

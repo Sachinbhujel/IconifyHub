@@ -38,7 +38,11 @@ const Icons = () => {
     setOpenIconName(iconName);
   }
   return (
-    <section className="icons">
+    <>
+    {iconClick ? (
+      <IconOpen openIconName={openIconName} setIconClick={setIconClick}/> 
+    ) : (
+      <section className="icons">
       <div className="icon-container">
         <h2>Explore Icon Collections</h2>
         <p className="desc">
@@ -53,9 +57,9 @@ const Icons = () => {
           ))}
         </div>
       </div>
-      <IconOpen openIconName={openIconName}/>
-      
     </section>
+    )}
+    </>
   );
 };
 
