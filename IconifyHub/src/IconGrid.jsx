@@ -34,6 +34,12 @@ const iconData = [
     {name: "radio_button_unchecked", title: "radio_button_unchecked"},
     {name: "more_horiz", title: "more_horiz"},
     {name: "download", title: "download"},
+     {name: "apps", title: "apps"},
+     {name: "arrow_right_alt", title: "arrow_right_alt"},
+     {name: "radio_button_checked", title: "radio_button_checked"},
+     {name: "filter_alt", title: "filter_alt"},
+     {name: "remove", title: "remove"},
+      {name: "bolt", title: "bolt"},
 ];
 
 const Icons = ({ searchQuery }) => {

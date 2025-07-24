@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 
-const Navbar = ({searchQuery, setSearchQuery}) => {
+const Navbar = ({ searchQuery, setSearchQuery }) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const handleMenu = () => {
@@ -13,15 +14,15 @@ const Navbar = ({searchQuery, setSearchQuery}) => {
                 <div className="logo-nav-links">
                     <div className="logo">IconifyHub</div>
                     <nav className="nav">
-                        <a href="#icons" className="nav-left">
+                        <Link to="/" className="nav-left">
                             Icons
-                        </a>
-                        <a href="#pricing" className="nav-left">
+                        </Link>
+                        <Link to="/pricing" className="nav-left">
                             Pricing
-                        </a>
-                        <a href="#illustrations" className="nav-left1">
+                        </Link>
+                        <Link to="/illustrations" className="nav-left1">
                             Illustrations
-                        </a>
+                        </Link>
                     </nav>
                 </div>
                 <div className="navbar-right">
